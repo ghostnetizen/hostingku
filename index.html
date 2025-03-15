@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSTINGKU | MARKET 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('https://files.catbox.moe/dajpko.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .welcome-screen {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+            z-index: 999;
+        }
+
+        .hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .content {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            padding: 20px;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .product h3 {
+            margin-bottom: 5px;
+        }
+
+        .buy-btn {
+            margin-top: 10px;
+            background: yellow;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            background: orange;
+            transform: scale(1.1);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-screen" id="welcomeScreen">
+        <h1>🎊 WELCOME 🎊</h1>
+        <p>Tempat terbaik untuk membeli kebutuhan hosting anda</p>
+    </div>
+
+    <div class="content" id="mainContent">
+        <h2>💎 PRODUK KAMI 💎</h2>
+        <div class="product-container">
+            <div class="product">
+                <h3>🛍️ PANEL RAM 5GB 🛍️</h3>
+                <p>Paket hosting dengan RAM 5GB untuk kebutuhan server ringan.</p>
+                <p>Rp5.000</p>
+                <a href="https://wa.me/6289602541152?text=Halo,%20saya%20ingin%20beli%20Panel%205GB" class="buy-btn">BUY</a>
+            </div>
+            <div class="product">
+                <h3>🛍️ PANEL RAM UNLIGB 🛍️</h3>
+                <p>Hosting dengan RAM unlimited untuk performa maksimal.</p>
+                <p>Rp10.000</p>
+                <a href="https://wa.me/6289602541152?text=Halo,%20saya%20ingin%20beli%20Panel%20UNLIGB" class="buy-btn">BUY</a>
+            </div>
+            <div class="product">
+                <h3>🛍️ VPS RAM 8GB CORE 4 🛍️</h3>
+                <p>VPS dengan RAM 8GB & 4 Core untuk kebutuhan bisnis.</p>
+                <p>Rp45.000</p>
+                <a href="https://wa.me/6289602541152?text=Halo,%20saya%20ingin%20beli%20VPS%20RAM%208GB" class="buy-btn">BUY</a>
+            </div>
+            <div class="product">
+                <h3>🛍️ VPS RAM 16GB CORE 4 🛍️</h3>
+                <p>VPS dengan RAM besar, cocok untuk server game atau bisnis besar.</p>
+                <p>Rp50.000</p>
+                <a href="https://wa.me/6289602541152?text=Halo,%20saya%20ingin%20beli%20VPS%20RAM%2016GB" class="buy-btn">BUY</a>
+            </div>
+            <div class="product">
+                <h3>🛍️ NOKOS WHATSAPP 🛍️</h3>
+                <p>Nomor kosong untuk daftar WhatsApp tanpa ribet.</p>
+                <p>Rp5.000</p>
+                <a href="https://wa.me/6289602541152?text=Halo,%20saya%20ingin%20beli%20Nokos%20WhatsApp" class="buy-btn">BUY</a>
+            </div>
+            <div class="product">
+                <h3>🛍️ RESELLER PANEL 🛍️</h3>
+                <p>Paket reseller untuk menjual panel sendiri.</p>
+                <p>Rp15.000</p>
+                <a href="https://wa.me/6289602541152?text=Halo,%20saya%20ingin%20beli%20Reseller%20Panel" class="buy-btn">BUY</a>
+            </div>
+            <div class="product">
+                <h3>🛍️ ADMIN PANEL 🛍️</h3>
+                <p>Panel admin dengan fitur lengkap untuk mengelola server.</p>
+                <p>Rp20.000</p>
+                <a href="https://wa.me/6289602541152?text=Halo,%20saya%20ingin%20beli%20Admin%20Panel" class="buy-btn">BUY</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© DimzTheGenshiro | HOSTINGKU 2025</p>
+        </div>
+    </div>
+
+    <audio id="bg-music" autoplay loop>
+        <source src="https://example.com/music.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById("welcomeScreen").classList.add("hidden");
+            setTimeout(() => {
+                document.getElementById("welcomeScreen").style.display = "none";
+                let content = document.getElementById("mainContent");
+                content.classList.add("show");
+                document.getElementById("bg-music").play();
+            }, 1000);
+        }, 2000);
+    </script>
+
+</body>
+</html>
